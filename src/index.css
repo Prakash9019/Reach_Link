@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+html, body {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+/* Optional utility: hide scrollbars in specific elements */
+.scrollbar-hide {
+  -ms-overflow-style: none !important;  /* IE/Edge */
+  scrollbar-width: none !important;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+/* MAIN WRAPPER that handles scroll but hides scrollbar */
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;      /* IE and Edge */
+  scrollbar-width: none;         /* Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;                 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;    /* dark gray/black thumb */
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e1e transparent;
+}
+
+
+/* Base styling for the input range itself */
+input[type="range"] {
+  width: 100%; 
+  background: transparent;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px; 
+  background: #39414b;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px; 
+  width: 25px; 
+  background: #F3F4F6; 
+  cursor: grab;
+  margin-top: -10px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  background: #4B5563; 
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #FFFFFF;
+  height: 4px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 16px; 
+  width: 16px; 
+  background: #F3F4F6; 
+  cursor: grab;
+}
+
+/* Focus styles (important for accessibility) */
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.7); 
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.7); 
+}
