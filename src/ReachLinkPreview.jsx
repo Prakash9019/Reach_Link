@@ -43,7 +43,7 @@ const tabOrder = ['DECK', 'BRIEF', 'NOTES', 'SCORE'];
 const AuthModal = ({ onChooseIncognito, onChooseGoogleClick }) => {
   return (
     // Main container that dims the background and centers content
-    <div className="fixed inset-0 bg-transparent flex flex-col justify-center items-center z-50 text-white font-inter px-4">
+    <div className="fixed inset-0 bg-black/70 flex flex-col justify-center items-center z-50 text-white font-inter px-4">
   
       {/* Modal content box */}
       <div className="bg-black border border-gray-800 p-8 rounded-lg shadow-2xl flex flex-col items-center w-full max-w-sm">
@@ -315,7 +315,7 @@ const ReachLinkPreview = () => {
           );
         }
         return (
-          <div style={{ fontFamily: "'Crimson Text', serif" }} className="p-4 md:p-8 w-full bg-black/55 mx-auto h-[71vh] text-center text-gray-300">
+          <div style={{ fontFamily: "'Crimson Text', serif" }} className="p-4 md:p-8 w-full bg-black/55 mx-auto h-[66vh] text-center text-gray-300">
             <h2 className="text-3xl md:text-4xl font-normal mb-8 md:mb-16">Score This Startup</h2>
             <div className="flex flex-col items-center mb-8">
               <input
@@ -356,14 +356,14 @@ const ReachLinkPreview = () => {
     }
   };
 
-  if (!authChosen) {
-    return (
-      <AuthModal
-        onChooseIncognito={handleIncognito}
-        onChooseGoogleClick={handleGoogleSuccess}
-      />
-    );
-  }
+  // if (!authChosen) {
+  //   return (
+  //     <AuthModal
+  //       onChooseIncognito={handleIncognito}
+  //       onChooseGoogleClick={handleGoogleSuccess}
+  //     />
+  //   );
+  // }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white font-inter flex flex-col items-center" style={{ fontFamily: "'Crimson Text', serif" }}>
@@ -390,6 +390,13 @@ const ReachLinkPreview = () => {
       <footer style={{ fontFamily: "'Crimson Text', serif" }} className="relative z-10 text-gray-500 text-sm flex items-center py-4 mt-auto">
         REACHLINK by <img className='w-4 h-4 mx-2' src={logo} alt="Vertx Logo" /> VERTX
       </footer>
+
+      {!authChosen && (
+        <AuthModal
+          onChooseIncognito={handleIncognito}
+          onChooseGoogleClick={handleGoogleSuccess}
+        />
+      )}
     </div>
   );
 };
