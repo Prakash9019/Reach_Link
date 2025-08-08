@@ -62,6 +62,28 @@ class AnalyticsAPI {
         const res = await fetch(`${this.baseURL}/api/analytics`);
         return res.json();
       }
+      async getUserDetails(userUUID) {
+        // console.log(userUUID);
+        const res = await fetch(`${this.baseURL}/api/analytics/user/${userUUID}`);
+        // console.log(res.json());
+        return res.json();
+      }
+
+      async getUserSummary() {
+        const res = await fetch(`${this.baseURL}/api/analytics/user-summary`);
+        return res.json();
+      }
+
+      async getAllFeedback() {
+        const res = await fetch(`${this.baseURL}/api/analytics/all-feedback`);
+        return res.json();
+      }
+
+      async getAllSessions() {
+        const res = await fetch(`${this.baseURL}/api/analytics/all-sessions`);
+        return res.json();
+      }
+      
     }
     
     const analytics = new AnalyticsAPI();
