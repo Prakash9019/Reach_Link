@@ -29,10 +29,10 @@ const deckSlides = [
 ];
 
 const notesSlides = [
-  { title: 'Market Opportunity', text: "There's a growing market opportunity in hyperlocal pet wellness combining doorstep vet care, organic pet food delivery, and real-time health tracking. Gen Z pet parents are driving the demand." },
-  { title: 'Business Model', text: "We offer unparalleled efficiency and data-driven insights to businesses, while providing seamless, personalized services to end-users. Our integrated suite reduces operational overhead and enhances user experience." },
-  { title: 'Potential Metrics', text: "We track key user engagement metrics, including Monthly Active Users (MAU), session duration, and feature adoption rates. Our goal is to achieve a 40% month-over-month increase in MAU in the first year." },
-  { title: 'Company Description', text: "Octartech Private Limited is an AI-powered fundraising suite for startups and investors. Our flagship product, VERTX AI, streamlines the entire fundraising process, from pitch deck creation to investor outreach and deal management, leveraging generative AI to provide a competitive edge in a crowded market." },
+  { title: 'Market Opportunity', text: "The global startup ecosystem hosts 150M+ startups, with 50M new startups launched annually. Over $450B+ is invested in venture funding each year, yet early-stage founders struggle to access capital. Capturing even 1% of this market represents a multi-billion-dollar opportunity for Vertx." },
+  { title: 'Business Model', text: "Vertx monetizes through SaaS subscriptions for startups and investors, success-based fees on closed deals, and enterprise licensing for universities via our virtual incubation platform. Additional revenue streams include premium AI tools, investor analytics, and white-labeled solutions for accelerators and VC firms." },
+  { title: 'Potential Metrics', text: "We project 10,000+ founders actively using Vertx tools, with 70% creating AI-powered pitches, 50% participating in mock pitching sessions, and 20% converting to investor conversations. Our goal is to enable $500M+ deal flow and 100,000+ investor connections within 24 months." },
+  { title: 'Company Description', text: "Vertx is an AI-powered fundraising infrastructure platform that helps startups go from idea to investment. We provide tools for cofounder matching, AI pitch creation, investor analysis, mock pitching, personalized investor connections (via Reach Link), and virtual deal rooms. Our mission is to make fundraising faster, smarter, and accessible globally." },
 ];
 
 // Tab order
@@ -246,9 +246,9 @@ const ReachLinkPreview = () => {
                   <h1 className="text-xl md:text-2xl font-semibold mb-1">OCTARTECH PRIVATE LIMITED</h1>
                   <p className="text-xl md:text-2xl text-white mb-2"> <span className='italic'>Founded on</span> <span className='font-semibold'>JULY 2025</span></p>
                   <div className="flex justify-center space-x-2 text-[10px] uppercase opacity-80">
-                    <a href="#" className="text-gray-300">Website</a>
+                    <a href="https://vertx.framer.ai/" className="text-gray-300">Website</a>
                     <span className="text-gray-500">|</span>
-                    <a href="#" className="text-gray-300">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/govertx/" className="text-gray-300">LinkedIn</a>
                   </div>
                 </div>
                 <div className='border-[0.5px] justify-center mx-auto w-[100px] mb-6 border-white' />
@@ -270,9 +270,9 @@ const ReachLinkPreview = () => {
                 <div className="text-center mb-2">
                   <h2 className="text-[16px] flex justify-center mx-auto font-semibold uppercase underline tracking-wider text-white/50 mb-2">Team</h2>
                   <div className="grid grid-cols-3 gap-2 text-white mx-auto max-w-sm">
-                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Praneeth Kumar</p><p className="text-xs font-semibold mb-1">CEO</p><a href="#" className="text-[10px] uppercase">LinkedIn</a></div>
-                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Surya Prakash</p><p className="text-xs font-semibold mb-1">CTO</p><a href="#" className="text-[10px] uppercase">LinkedIn</a></div>
-                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Tharan PS</p><p className="text-xs font-semibold mb-1">CMO</p><a href="#" className="text-[10px] uppercase">LinkedIn</a></div>
+                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Praneeth Kumar</p><p className="text-xs font-semibold mb-1">CEO</p><a href="https://www.linkedin.com/in/praneethregulavalasa" className="text-[10px] uppercase">LinkedIn</a></div>
+                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Surya Prakash</p><p className="text-xs font-semibold mb-1">CTO</p><a href="https://www.linkedin.com/in/suryaprakashloka" className="text-[10px] uppercase">LinkedIn</a></div>
+                    <div className="flex flex-col items-center"><p className="text-xs font-semibold">Tharan PS</p><p className="text-xs font-semibold mb-1">CMO</p><a href="https://www.linkedin.com/in/tharun-ps/" className="text-[10px] uppercase">LinkedIn</a></div>
                   </div>
                 </div>
               </div>
